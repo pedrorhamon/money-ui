@@ -1,0 +1,9 @@
+.navbar {
+  padding: 20px 0 20px;
+  background-color: #1e94d2;
+  border: none;
+}
+
+.navbar-toggle {
+  color: #fff;
+}
