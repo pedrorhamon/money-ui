@@ -40,10 +40,14 @@
               <td>{{ lancamento.descricao }}</td>
               <td class="col-data-content">{{ lancamento.dataVencimento }}</td>
               <td class="col-data-content">{{ lancamento.dataPagamento }}</td>
-              <td class="col-valor-content">{{ lancamento.valor }}</td>
+              <td class="col-valor" [style.color]="lancamento.tipo === 'DESPESA' ? 'red' : 'blue'">{{ lancamento.valor }}</td>
             </tr>
           </ng-template>
         </p-table>
+      </div>
+        <br>
+      <div class="p-col-12">
+        <a pButton label="Novo Lançamento"></a>
       </div>
 
   </div>
