@@ -10,7 +10,7 @@ export class NavbarComponent implements OnInit {
 
   exibindoMenu = false;
 
-  constructor(private router: Router) { }
+  constructor() { }
 
   ngOnInit(): void {
   }
