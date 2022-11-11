@@ -19,8 +19,8 @@ a.p-button:focus {
   text-decoration: none;
 }
 
-form .p-button {
-  margin-right: .25em;
+.p-button {
+  margin-right: .25em
 }
 
 label {
