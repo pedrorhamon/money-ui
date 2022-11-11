@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Route, Router } from '@angular/router';
 
 @Component({
   selector: 'app-lancamentos-pesquisa',
@@ -24,9 +25,13 @@ export class LancamentosPesquisaComponent implements OnInit {
       dataPagamento: null, valor: 180, pessoa: 'Academia Top' }
   ];
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
+  }
+
+  lancamentoNovo() {
+    this.router.navigate(["/lancamentos/novo"]);
   }
 
 }
