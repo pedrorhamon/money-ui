@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
@@ -21,8 +22,8 @@ import { AppComponent } from './app.component';
 import { LancamentoCadastroComponent } from './lancamento-cadastro/lancamento-cadastro.component';
 import { LancamentosPesquisaComponent } from './lancamentos-pesquisa/lancamentos-pesquisa.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { PessoasPesquisaComponent } from './pessoas-pesquisa/pessoas-pesquisa.component';
 import { PessoaCadastroComponent } from './pessoa-cadastro/pessoa-cadastro.component';
+import { PessoasPesquisaComponent } from './pessoas-pesquisa/pessoas-pesquisa.component';
 
 @NgModule({
   declarations: [
@@ -51,6 +52,7 @@ import { PessoaCadastroComponent } from './pessoa-cadastro/pessoa-cadastro.compo
     DropdownModule,
     CurrencyMaskModule,
     InputMaskModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
